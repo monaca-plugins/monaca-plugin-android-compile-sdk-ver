@@ -8,7 +8,5 @@
     <engine name="cordova" version=">=6.5.0"/>
   </engines>
 
-  <platform name="android">
-    <hook type="after_prepare" src="scripts/replaceCompileSdkVersion.js" />
-  </platform>
+  <hook type="after_prepare" src="scripts/replaceCompileSdkVersion.js" />
 </plugin>
