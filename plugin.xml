@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="monaca-plugin-android-compile-sdk-ver" version="1.0.0">
+  <name>monaca-plugin-android-compile-sdk-ver</name>
+  <author>Monaca (https://monaca.mobi/)</author>
+  <description>This plugin set gradle compileSdkVersion.</description>
+  <license>Asial License</license>
+  <engines>
+    <engine name="cordova" version=">=6.5.0"/>
+  </engines>
+
+  <platform name="android">
+    <hook type="after_prepare" src="scripts/replaceCompileSdkVersion.js" />
+  </platform>
+</plugin>

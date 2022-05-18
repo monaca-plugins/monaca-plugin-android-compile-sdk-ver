@@ -1,0 +1,12 @@
+{
+  "name": "monaca-plugin-android-compile-sdk-ver",
+  "version": "1.0.0",
+  "description": "This plugin set gradle compileSdkVersion.",
+  "author": {
+    "name": "Monaca Team"
+  },
+  "license": "Asial License",
+  "publishConfig": {
+    "registry": "https://npm.monaca.io"
+  }
+}
