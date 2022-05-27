@@ -1,31 +1,22 @@
-# Android コンパイルSDKバージョン設定
+# Android Compile SDK Version Setting Plugin for monaca
 
-Androidアプリにおいて、`build.gradle`のコンパイルSDKバージョン(`compileSDKVersion`)を設定するプラグインです。
+The plugin sets the compile SDK version for `build.gradle` when building Android apps.
 
-デフォルトではコンパイルSDKバージョンはターゲットSDKバージョンと同じ値に設定されます。
-このプラグインを使用することで、コンパイルSDKバージョンをターゲットSDKバージョンと別の値に設定することができます。
+By default, the compile SDK version is set to the same value as the target SDK version.
+This plugin allows you to set the compile SDK version to a different value than the target SDK version.
 
-::: warn
-コンパイルSDKバージョンの値はターゲットSDKバージョン以上に設定する必要があります。
-`compileSdkVersion >= targetSdkVersion`
-:::
+> Compile SDK version value should be set to the target SDK version value or above.
+> `compileSdkVersion >= targetSdkVersion`
 
-## サポート対象のプラットフォーム
+## Supported Platforms
 
+- Cordova 10 or later
 - Android
-- Cordova 10 以降
 
-## プラグインの追加方法(Monaca上での操作)
+## Setting the Compile SDK Version
 
-このプラグインを使用する場合には、Monaca クラウド IDE の [ Cordova プラグインの管理 ] 上で、
-`CompileSdkVersion` プラグインを[有効](https://ja.docs.monaca.io/products_guide/monaca_ide/dependencies/cordova_plugin#cordova-puraguin-noinpto)にします。
-
-## コンパイルSDKバージョンの設定
-
-1. プロジェクトを開き、`config.xml`を開きます。
-2. 以下のように、`COMPILE_SDK_VERSION`の値を設定します。
+1. Open the project and open `config.xml`
+2. Set the `COMPILE_SDK_VERSION` value as follows
 ```
-  <platform name="android">
-    <preference name="COMPILE_SDK_VERSION" value="31"/>
-  </platform>
+  <preference name="COMPILE_SDK_VERSION" value="31"/>
 ```

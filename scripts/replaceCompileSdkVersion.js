@@ -1,4 +1,7 @@
-module.exports = function(context) {
+/**
+ * Copyright (c) 2022 Asial Corporation. All rights reserved.
+ */
+ module.exports = function(context) {
 
   if (context.opts.platforms.indexOf("android") == -1) {
     console.log("replaceCompileSdkVersion: no android");
@@ -9,7 +12,7 @@ module.exports = function(context) {
   var fse = require('fs-extra');
   var root = context.opts.projectRoot;
 
-  // compileSdkVersionの取得
+  // get compileSdkVersion value
   var ConfigParser = context.requireCordovaModule('cordova-common').ConfigParser;
   var cfg = new ConfigParser("config.xml");
   var compileSdkVersion = cfg.getPreference("COMPILE_SDK_VERSION", "android");
