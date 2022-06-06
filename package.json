@@ -1,9 +1,9 @@
 {
-  "name": "monaca-plugin-android-compile-sdk-ver",
+  "name": "@monaca/monaca-plugin-android-compile-sdk-ver",
   "version": "1.0.0",
   "description": "Setting gradle compileSdkVersion plugin for monaca.",
   "cordova": {
-    "id": "monaca-plugin-android-compile-sdk-ver",
+    "id": "@monaca/monaca-plugin-android-compile-sdk-ver",
     "platforms": [
       "android"
     ]
@@ -21,7 +21,7 @@
     "cordova-android"
   ],
   "author": "Asial Corporation",
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/monaca-plugins/monaca-plugin-android-compile-sdk-ver/issues"
   },

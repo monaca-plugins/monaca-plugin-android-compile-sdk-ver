@@ -10,8 +10,7 @@ This plugin allows you to set the compile SDK version to a different value than 
 
 ## Supported Platforms
 
-- Cordova 10 or later
-- Android
+- cordova-android@10.0.0 or later
 
 ## Setting the Compile SDK Version
 
@@ -20,3 +19,7 @@ This plugin allows you to set the compile SDK version to a different value than 
 ```
   <preference name="COMPILE_SDK_VERSION" value="31"/>
 ```
+
+## License
+
+see [LICENSE](./LICENSE)
