@@ -14,7 +14,7 @@
 
   // get compileSdkVersion value
   var ConfigParser = context.requireCordovaModule('cordova-common').ConfigParser;
-  var cfg = new ConfigParser("config.xml");
+  var cfg = new ConfigParser("platforms/android/app/src/main/res/xml/config.xml");
   var compileSdkVersion = cfg.getPreference("COMPILE_SDK_VERSION", "android");
   if (!compileSdkVersion) {
     console.log("replaceCompileSdkVersion: compileSDKVersion not replaced because COMPILE_SDK_VERSION is not defined.");

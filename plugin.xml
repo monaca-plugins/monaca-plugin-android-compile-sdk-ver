@@ -8,6 +8,12 @@
     <engine name="cordova" version=">=6.5.0"/>
     <engine name="cordova-android" version=">=10.0.0" />
   </engines>
+  <platform name="android">
+    <preference name="COMPILE_SDK_VERSION" default="31"/>
+    <config-file target="config.xml" parent="/widget">
+      <preference name="COMPILE_SDK_VERSION" value="$COMPILE_SDK_VERSION" />
+    </config-file>
+  </platform>
 
   <hook type="after_prepare" src="scripts/replaceCompileSdkVersion.js" />
 </plugin>
